@@ -1,0 +1,602 @@
+/* PALETA DE CLORORES */
+:root{
+    --color-primario: #5CDAF5;
+    --color-secundario: #7068F4;
+    --color-Terciario: #81FFDF;
+    --gris-fondo: #F4F6F6;
+    --color-titulo: #007FFF;
+    --color-gris: #95B0B7;
+    --color-blanco: #ffffff;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.mg-pd{
+    margin: 35px 0px;
+    padding: 0px 70px;
+}
+.titulo-2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: underline wavy var(--color-primario);
+}
+.txt{
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* BARRA DE NAVEGACIÓN */
+nav{
+    width: 100%;
+    background-color: var(--color-blanco);
+}
+ul{
+    width: 100%;
+}
+ul .logo img{
+    width: 55px;
+    height: 45px;
+}
+.nav li .nav-link img{
+    width: 25px;
+    height: 20px;
+    padding-right: 5px;
+}
+.nav li .nav-link{
+    color: var(--color-secundario);
+    font-weight: 500;
+    font-size: 18px;
+}
+.nav li .nav-link:hover{
+    font-size: 20px;
+    text-decoration: overline var(--color-Terciario);
+    transition: 0.2s;
+}
+/* HOME */
+header{
+    width: 100%;
+}
+.container-lg{
+    display: flex;
+}
+.col-rigth{
+    width: 60%;
+    height: 250px;
+    position: relative;
+    top: 100px;
+}
+header .col-rigth h1{
+    color: var(--color-titulo);
+    font-weight: 400;
+}
+header .col-rigth .word{
+    color: var(--color-titulo);
+    font-weight: 400;
+    border-right: 2px solid #007FFF;
+}
+header .col-rigth .redes-sociales a img:hover{
+    width: 35px;
+    transition: 0.3s;
+}
+.col-left{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+.col-left img{
+    width: 300px;
+    height: auto;
+}
+/* ABOUT */
+main{
+    background-color: var(--color-secundario);
+    width: 100%;
+    padding: 35px 70px;
+}
+main .container-md{
+    display: flex;
+}
+main h2{
+    color: var(--color-blanco);
+}
+main .text-about{
+    color: var(--gris-fondo);
+}
+main .colm-1{
+    width: 30%;
+}
+main .colm-1 img{
+    width: 100%;
+    height: 100%;
+}
+main .colm-2{
+    width: 70%;
+    font-size: 18px;
+    color: var(--gris-fondo);
+    text-align: justify;
+}
+main .colm-2 .cont-list{
+    display: flex;
+}
+main .colm-2 .cont-list ul li{
+    padding-bottom: 15px;
+    list-style: none;
+}
+main .colm-2 .cont-list ul li .ul-item{
+    font-weight: 500;
+    color: var(--color-blanco);
+}
+/* SECTION RESUMEN */
+.resume h2{
+    color: var(--color-titulo);
+}
+.resume .container-md .div-resum{
+    width: 50%;
+    text-align: justify;
+    padding-right: 30px;
+    font-size: 18px;
+}
+.resume .resumen{
+    float: left;
+}
+.resume .exp-pro{
+    float: right;
+}
+.resume .educacion{
+    clear: left;
+}
+.resume .linea-left{
+    border-left: 3px solid var(--color-titulo);
+    padding-left: 20px;
+    margin-left: 10px;
+}
+.resume .div-resum h3{
+    color: var(--color-titulo);
+}
+.resume .div-resum .linea-left h4{
+    color: var(--color-primario);
+    font-size: 18px;
+}
+.resume .div-resum ul li::marker{
+    color: var(--color-primario);
+}
+/* CONTADOR Y BARRAS DE PROGRESO */
+.cont-pro{
+    padding-top: 0;
+}
+.cont-pro h2{
+    color: var(--color-titulo);
+}
+.container{
+    width: 100%;
+}
+.skill_bottom_content{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.skill_bottom_item{
+    width: 25%;
+}
+.skill_bottom_item h4{
+    color: var(--color-titulo);
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* BARRAS DE PROGRESO */
+.tamaño{
+    width: 50%;
+    padding-right: 10px;
+}
+.teamskillbar {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
+    width:100%;
+    height: 10px;
+    background-color: #EAECEE;
+    border-radius: 5px;
+}
+.teamskillbar-bar {
+    border-radius: 5px;
+    height:10px;
+    width:0px;
+    background: var(--color-secundario);
+    position: absolute;
+    left:0px;
+    top:0px; 
+}
+.nom-barra{
+    float: left;
+}
+/* PORTAFOLIO */
+.portfolio h2{
+    color: var(--color-titulo);
+}
+.portfolio .container-md{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio .container-md .img-portfolio{
+    width: 30%;
+    height: 250px;
+    margin: 0px 0px 30px 25px;
+}
+.portfolio .container-md .img-portfolio .enlace{
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 238, 248, 0.6);
+    opacity: 0;
+}
+.portfolio .container-md .img-portfolio .enlace:hover{
+    opacity: 1;
+    transition: 0.2s;
+}
+.portfolio .container-md .img-portfolio .enlace a{
+    position: relative;
+   top: 40%;
+   bottom: 40%;
+   left: 40%;
+}
+.portfolio .container-md .img1{
+    background-image:url(../img/portafolio-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.portfolio .container-md .img2{
+    background-image:url(../img/portafolio-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.portfolio .container-md .img3{
+    background-image:url(../img/portafolio-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.portfolio .container-md .img4{
+    background-image:url(../img/portafolio-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.portfolio .container-md .img5{
+    background-image:url(../img/portafolio-5.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+.portfolio .container-md .img6{
+    background-image:url(../img/portafolio-6.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+/* SERVICIOS */
+.services h2{
+    color: var(--color-titulo);
+}
+/* COMENTARIOS */
+.comentarios .titulo-2{
+    color: var(--color-blanco);
+}
+/* CONTACTANOS */
+.contact h2{
+    color: var(--color-titulo);
+}
+/*LOGIN*/
+.login{
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login h1{
+    color: var(--color-titulo);
+}
+.login form label{
+    color: var(--color-secundario);
+}
+.login form input{
+    border: solid 2px var(--color-secundario) !important;
+}
+.login form button{
+    padding-bottom: 5px;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%) !important;
+    color: var(--color-blanco);
+    border: solid 0px ;
+}
+.login form button:active{
+    background: var(--color-blanco)!important;
+    color: var(--color-titulo);
+    border: solid 2px var(--color-titulo);
+}
+/* VISTA ADMINISTRADOR 
+USUARIOS */
+.usuarios h1,h3{
+    color: var(--color-titulo);
+}
+.usuarios form label{
+    color: var(--color-secundario) !important;
+}
+.usuarios form input,select{
+    border: solid 2px var(--color-secundario) !important;
+}
+.usuarios form button{
+    padding-bottom: 5px;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%) !important;
+    color: var(--color-blanco);
+    border: solid 0px ;
+}
+.usuarios form button:active{
+    background: var(--color-blanco)!important;
+    color: var(--color-titulo);
+    border: solid 2px var(--color-titulo);
+}
+.usuarios table tr th{
+    text-align: center;
+    color: var(--color-titulo);
+    font-weight: 500;
+    font-size: 20px;
+}
+.usuarios table tr td{
+    text-align: center;
+}
+#editar{
+    background-color: #48c6ef;
+    color: var(--color-blanco);
+}
+#eliminar{
+    background-color: #6f86d6;
+    color: var(--color-blanco);
+}
+/* ESTILO PÁGINA DESARROLLADORES */
+h1{
+    color: var(--color-titulo);
+}
+#crearDesarrollador input{
+    border: solid 2px var(--color-secundario) !important;
+}
+.bd-color{
+    border-color: var(--color-primario) !important;
+}
+.bg-color-card{
+    background-color: var(--color-gris) !important;
+}
+/* ESTILO MODAL */
+.modal-dialog h3{
+    color: var(--color-titulo);
+}
+.modal-dialog form input{
+    border-color: var(--color-secundario) !important;
+}
+.modal-dialog form button{
+    padding-bottom: 5px;
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%) !important;
+    color: var(--color-blanco);
+    border: solid 0px ;
+}
+.modal-dialog form label{
+    color: var(--color-secundario) !important;
+}
+@media screen and (max-width: 576px) {
+    .mg-pd{
+        margin: 20px 0px;
+        padding: 0px 30px;
+    }
+    .container-lg{
+        display: block;
+    }
+    .col-rigth{
+        width: 100%;
+        height: 200px;
+        position: initial;
+    }
+    .col-left{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .col-left img{
+        width: 300px;
+        height: auto;
+    }
+    main{
+        padding: 20px 30px;
+    }
+    main .container-md{
+        display: block;
+    }
+    main .colm-1{
+        width: 100%;
+    }
+    main .colm-1 img{
+        width: 100%;
+        height: auto;
+    }
+    main .colm-2{
+        width: 100%;
+        text-align: justify;
+    }
+    main .colm-2 .cont-list{
+        display: block;
+    }
+    main .colm-2 .cont-list ul li{
+        padding-bottom: 0px;
+        font-size: 16px;
+    }
+    .resume .container-md .div-resum{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .resume .resumen{
+        float: none;
+    }
+    .resume .exp-pro{
+        float: none;
+    }
+    .resume .educacion{
+        clear: none;
+    }
+    .skill_bottom_content{
+        display: block;
+    }
+    .skill_bottom_item{
+        width: 100%;
+    }
+    .skills{
+        display: block;
+    }
+    .tamaño{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .portfolio .container-md{
+        display: block;
+    }
+    .portfolio .container-md .img-portfolio{
+        width: 100%;
+        height: 150;
+        margin: 30px 0px 30px 0px;
+    }
+}
+/* PANTALLA MEDIANA A LARGA */
+@media screen and (min-width:576px) and (max-width:992px){
+    .mg-pd{
+        margin: 20px 0px;
+        padding: 0px 35px;
+    }
+    .container-lg{
+        display: block;
+    }
+    .col-rigth{
+        width: 100%;
+        height: 200px;
+        position: initial;
+    }
+    .col-left{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .col-left img{
+        width: 300px;
+        height: auto;
+    }
+    main{
+        padding: 20px 35px;
+    }
+    main .container-md{
+        display: block;
+    }
+    main .colm-1{
+        width: 100%;
+    }
+    main .colm-1 img{
+        width: 100%;
+        height: 500px;
+    }
+    main .colm-2{
+        width: 100%;
+        text-align: justify;
+    }
+    main .colm-2 .cont-list{
+        display: block;
+    }
+    main .colm-2 .cont-list ul li{
+        padding-bottom: 0px;
+    }
+    .resume .container-md .div-resum{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .resume .resumen{
+        float: none;
+    }
+    .resume .exp-pro{
+        float: none;
+    }
+    .resume .educacion{
+        clear: none;
+    }
+    .skill_bottom_content{
+        flex-wrap: wrap;
+    }
+    .skill_bottom_item{
+        width: 50%;
+    }
+    .skills{
+        display: block;
+    }
+    .tamaño{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .portfolio .container-md{
+        display: block;
+    }
+    .portfolio .container-md .img-portfolio{
+        width: 100%;
+        height: 250;
+        margin: 30px 0px 30px 0px;
+    }
+}
+
+/* PANTALLA XL PC */
+@media screen and (min-width:992px) and (max-width:1200px){
+    .mg-pd{
+        margin: 20px 0px;
+        padding: 0px 40px;
+    }
+    .container-lg{
+        display: block;
+    }
+    .col-rigth{
+        width: 100%;
+        height: 200px;
+        position: initial;
+    }
+    .col-left{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .col-left img{
+        width: 350px;
+        height: auto;
+    }
+    main{
+        padding: 20px 40px;
+    }
+    main .container-md{
+        display: block;
+    }
+    main .colm-1{
+        width: 100%;
+    }
+    main .colm-1 img{
+        width: 100%;
+        height: 600px;
+    }
+    main .colm-2{
+        width: 100%;
+        text-align: justify;
+    }
+    main .colm-2 .cont-list{
+        display: block;
+    }
+    main .colm-2 .cont-list ul li{
+        padding-bottom: 0px;
+    }
+}
